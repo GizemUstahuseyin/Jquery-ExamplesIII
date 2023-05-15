@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>jQuery Examples 2</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <script>
+        function goz_kirp() {
+
+            $('.blink').css({ "color": "#cb42f5" , "font-size" : 52 });
+            $('.blink').fadeOut(500);
+            $('.blink').fadeIn(500);
+        }
+
+        function geri_don() {
+            $('.blink').css("color", "black");
+        }
+
+        $(document).ready(function () {
+            $('p').css("font-size", 32);
+            setInterval(function () {
+                goz_kirp();
+            },    500);
+            });
+
+    </script>
+
+</head>
+<body>
+    <p>GÜNAYDIN CANIM! GÝZEM SANA<span class="blink"> GÖZ</span> KIRPIYOR.</p>
+
+</body>
+</html>
